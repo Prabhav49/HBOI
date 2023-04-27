@@ -19,6 +19,11 @@ const AccSchema = new Schema({
         max:50,
         unique:true,
     },
+    password:{
+        type:String,
+        required:true,
+        min:5,
+    },
     accountNumber:{
         type:Number,
         required:true,
@@ -41,7 +46,9 @@ const AccSchema = new Schema({
         type:String,
         required:true,
     },
-    micrCode    
+    micrCode  :{
+        type:Number,
+        required:true, } 
 });
 
 module.exports = mongoose.model('account', AccSchema);
