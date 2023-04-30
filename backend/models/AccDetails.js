@@ -19,11 +19,6 @@ const AccSchema = new Schema({
         max:50,
         unique:true,
     },
-    password:{
-        type:String,
-        required:true,
-        min:5,
-    },
     accountNumber:{
         type:Number,
         required:true,
