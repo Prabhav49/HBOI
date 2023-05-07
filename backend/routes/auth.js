@@ -59,7 +59,7 @@ router.post('/createuser', [
 
 
         // res.json(user);
-        res.json({ authtoken });
+        res.json({ user });
 
     } catch (error) {
         console.log(error.message);
