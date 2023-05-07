@@ -66,11 +66,11 @@ const UserSchema = new Schema({
         type:String,
         required:true,
     },
-    // accountBalance:{
-    //     type:Number,
-    //     required:true,
-    //     default:generateBalance,
-    // },
+    accountBalance:{
+        type:Number,
+        required:true,
+        default:generateBalance,
+    },
     cifNo:{
         type:String,
         unique:true,

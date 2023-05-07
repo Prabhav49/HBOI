@@ -41,4 +41,26 @@ router.get('/addamount', fetchuser, [
     }
 })
 
+//ROUTE - 3 :Updating Amount: POST '/api/accDetail/updateamount. Login Required
+router.put('/updateamount/:id', fetchuser, async (req, res) => {
+   const {accountBalance} = req.body;
+   //Create a newAmount object
+
+   const newAmount = {};
+
+   if(accountBalance) {newAmount.accountBalance = accountBalance};
+
+   //Find the amount to be updated and update it
+   let userAmount = await Balance.findById(req.params.id);
+   if(!userAmount){return res.status(404).send("Not Found")}
+   
+   if(newAmount.user.toString() !== req.user.id){
+    return res.status(401).send("Not Allowed");
+   }
+
+   newAmount = await Balance.findByIdAndUpdate(req.params.id, {$set: newAmount}, {new:true})
+
+   res.json(newAmount)
+})
+
 module.exports = router
