@@ -1,0 +1,35 @@
+
+nav {
+    background-color: #ffddcf;
+    color: #fff;
+    margin-bottom: 2rem;
+  }
+  
+  nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  nav li {
+    margin: 0 10px;
+    color:black;
+  }
+  
+  .nav-link {
+    display: block;
+    color: #000000;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 1.5rem;
+
+  }
+  
+  .nav-link:hover {
+    background-color: #ff6e6e;
+    color: #ffffff;
+  }
+  
