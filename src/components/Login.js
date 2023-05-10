@@ -64,7 +64,6 @@ const Login = () => {
 
           <button type="submit" onSubmit={handleSubmit}>Submit</button>
         </form>
-
         <img src='https://t4.ftcdn.net/jpg/01/94/43/75/360_F_194437567_7XBhvqR0ASvGlZgHxwxJR6wMR7dMfIWc.jpg' />
       </div>
 

@@ -1,15 +1,15 @@
 import React, { useContext } from 'react'
 import accountContext from "../context/accounts/accountContext"
+import DetailItem from './DetailItem';
 
 const AccountDetail = () => {
-    const context = useContext(accountContext);
-    const {detail,setDetail} = context;
+  const context = useContext(accountContext);
+  const { detail, setaccDetail } = context;
   return (
     <div>
-      <h1>Your details</h1>
-      {detail.map((detail)=>{
-        return detail.email;
-        ;
+      <h1>Your Details</h1>
+      {detail.map((details) => {
+        return <DetailItem detail={details}/>;
       })}
     </div>
   )
