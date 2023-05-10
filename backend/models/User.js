@@ -32,8 +32,6 @@ const UserSchema = new Schema({
     firstName:{
         type:String,
         required:true,
-        min:2,
-        max:50,
     },
     lastName:{
         type:String,
@@ -46,6 +44,10 @@ const UserSchema = new Schema({
         required:true,
         max:50,
         unique:true,
+    },
+    phone:{
+        type:Number,
+        required:true,
     },
     password:{
         type:String,
