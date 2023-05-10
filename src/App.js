@@ -8,6 +8,7 @@ import SignUp from './components/SignUp';
 import Calculator from './components/calculator';
 import AccountState from './context/accounts/AccountState';
 import AccountDetail from './components/AccountDetail';
+import Alert from './components/Alert';
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
       <AccountState>
         <Router>
           <Navbar />
+          <Alert message="Prabhav Pandey"/>
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />

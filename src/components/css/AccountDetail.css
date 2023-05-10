@@ -4,6 +4,7 @@ table {
   }
   
   th, td {
+    font-size: 20px;
     padding: 10px;
     text-align: left;
     border-bottom: 1px solid #ddd;
@@ -15,6 +16,6 @@ table {
   
   td:first-child {
     font-weight: bold;
-    width: 200px;
+    width: 500px;
   }
   

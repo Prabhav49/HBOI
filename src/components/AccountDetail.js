@@ -1,10 +1,15 @@
-import React, { useContext } from 'react'
+import React, { useContext, useEffect } from 'react'
 import accountContext from "../context/accounts/accountContext"
 import DetailItem from './DetailItem';
 
 const AccountDetail = () => {
   const context = useContext(accountContext);
-  const { detail, setaccDetail } = context;
+  const { detail, getDetail } = context;
+
+  useEffect(()=>{
+    getDetail()
+  },[])
+
   return (
     <div>
       <h1>Your Details</h1>
