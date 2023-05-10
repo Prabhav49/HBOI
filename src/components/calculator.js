@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import './css/calculator.css';
 
 function PremiumCalculator() {
   const [age, setAge] = useState('');
@@ -10,7 +11,7 @@ function PremiumCalculator() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('/calculate-premium', { age, gender, smoking });
+      const response = await axios.post("http://localhost:5000/api/premiumAmount/calculate-premium", { age, gender, smoking });
       setPremium(response.data.premium);
     } catch (error) {
       console.error(error);
@@ -39,7 +40,7 @@ function PremiumCalculator() {
       </label>
       <br />
       <button type="submit">Calculate Premium</button>
-      {premium && <div>Premium: {premium}</div>}
+      {premium && <div className='premiumAmount'>Premium: {premium}</div>}
     </form>
   );
 }

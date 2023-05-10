@@ -22,7 +22,7 @@ const Login = () => {
     if(json.success){
       //redirect
       localStorage.setItem('token',json.authtoken);
-      navigate('/');
+      navigate('/accountDetail');
     }
     else{
       alert("Invalid");

@@ -64,7 +64,7 @@ router.post('/createuser',
 
         // res.json(user);
         success =true;
-        res.json({ success,user });
+        res.json({user });
 
     } catch (error) {
         console.log(error.message);
