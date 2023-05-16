@@ -20,6 +20,7 @@ const Navbar = () => {
                 <li><Link className={`nav-link ${location.pathname === "/login" ? "active" : ""}`} to="/login">Login</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/calculator" ? "active" : ""}`} to="/calculator">Calculator</Link></li>
+                <li><Link className={`nav-link ${location.pathname === "/BankChatBot" ? "active" : ""}`} to="/BankChatBot">ChatBot</Link></li>
             </ul>
             </div>
         </nav>

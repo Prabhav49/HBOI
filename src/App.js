@@ -5,10 +5,11 @@ import About from './components/About';
 import Home from './components/home';
 import Login from './components/Login';
 import SignUp from './components/SignUp';
-import Calculator from './components/calculator';
 import AccountState from './context/accounts/AccountState';
 import AccountDetail from './components/AccountDetail';
 import Alert from './components/Alert';
+import PremiumCalculator from './components/calculator';
+import BankChatBot from './components/BankChatBot';
 
 
 function App() {
@@ -17,7 +18,6 @@ function App() {
       <AccountState>
         <Router>
           <Navbar />
-          <Alert message="Prabhav Pandey"/>
           <div className="container">
             <Routes>
               <Route path="/" element={<Home />} />
@@ -25,7 +25,9 @@ function App() {
               <Route path="/signUp" element={<SignUp/>} />
               <Route path="/accountDetail" element={<AccountDetail/>} />
               <Route path="/about" element={<About />} />
-              <Route path="/calculator" element={<Calculator />} />
+              <Route path="/calculator" element={<PremiumCalculator />} />
+              <Route path="/BankChatBot" element={<BankChatBot />} />
+              
             </Routes>
           </div>
         </Router>

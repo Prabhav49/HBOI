@@ -21,14 +21,14 @@ const SignUp = () => {
 
     const json = await response.json();
     console.log(json);
-    if(json.success){
-      //redirect
-      localStorage.setItem('token',json.authtoken);
-      navigate('/');
-    }
-    else{
-      alert("Invalid");
-    }
+    
+  if (json.success) {
+    //redirect
+    localStorage.setItem('token', json.authtoken);
+    navigate('/');
+  } else {
+    alert("Invalid");
+  }
   }
 
   const onChange = (e) => {
@@ -120,7 +120,7 @@ const SignUp = () => {
       </div>
 
       <div className='container4'>
-        <img src='https://www.shutterstock.com/image-vector/web-concept-online-banking-modern-260nw-603967571.jpg' height="222px" width="100%" />
+      <img src="http://localhost:3000/assets/Frame1.png" width="100%" />
       </div>
 
       <div className='footer'>
