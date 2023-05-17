@@ -5,6 +5,10 @@ nav {
     color: #fff;
   }
   
+  .navbarLogo{
+    margin-top: 0.3rem;
+    margin-left: 2rem;
+  }
   nav ul {
     list-style: none;
     margin: 0;

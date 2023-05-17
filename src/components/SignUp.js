@@ -39,7 +39,7 @@ const SignUp = () => {
 
       <div className='container1'>
         <div className='column'>
-          <img src='https://www.whoistheownerof.com/wp-content/uploads/2018/02/Owner-of-Punjab-National-Bank-India-Wiki-Logo-profile-600x251.jpg' height="80px" width="220px" alt="Logo" />
+        <img className='signUpLogo' src='http://localhost:3000/assets/navbarLogo.png' alt="Logo" />
           <h4>Sign Up to HBOI</h4>
         </div>
         <div className='column'>

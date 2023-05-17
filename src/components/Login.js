@@ -38,7 +38,7 @@ const Login = () => {
 
       <div className='container1'>
         <div className='column'>
-          <img src='https://www.whoistheownerof.com/wp-content/uploads/2018/02/Owner-of-Punjab-National-Bank-India-Wiki-Logo-profile-600x251.jpg' height="80px" width="220px" alt="Logo" />
+        <img className='signUpLogo' src='http://localhost:3000/assets/navbarLogo.png' alt="Logo" />
           <h4>Login to HBOI</h4>
         </div>
         <div className='column'>
@@ -64,7 +64,7 @@ const Login = () => {
 
           <button type="submit" onSubmit={handleSubmit}>Submit</button>
         </form>
-        <img src='https://t4.ftcdn.net/jpg/01/94/43/75/360_F_194437567_7XBhvqR0ASvGlZgHxwxJR6wMR7dMfIWc.jpg' />
+        <img className="beSafe" src='http://localhost:3000/assets/frame2.png' height="100%" width="50%" />
       </div>
 
       <div className='container4'>

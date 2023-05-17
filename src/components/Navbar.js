@@ -13,11 +13,12 @@ const Navbar = () => {
         <nav>
 
             <div className='flexbetween'>
-            <img src='https://www.whoistheownerof.com/wp-content/uploads/2018/02/Owner-of-Punjab-National-Bank-India-Wiki-Logo-profile-600x251.jpg' height="60px" width="220px" alt="Logo" />
+            <img className='navbarLogo' src='http://localhost:3000/assets/navbarLogo.png' height="5%" width="10%" alt="Logo" />
             <ul>
                 <li><Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/">Home</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/signUp" ? "active" : ""}`} to="/signUp">Sign Up</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/login" ? "active" : ""}`} to="/login">Login</Link></li>
+                <li><Link className={`nav-link ${location.pathname === "/accountDetail" ? "active" : ""}`} to="/accountDetail">Account Detail</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/about" ? "active" : ""}`} to="/about">About</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/calculator" ? "active" : ""}`} to="/calculator">Calculator</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/BankChatBot" ? "active" : ""}`} to="/BankChatBot">ChatBot</Link></li>

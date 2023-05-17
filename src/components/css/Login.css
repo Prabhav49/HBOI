@@ -46,6 +46,16 @@ input[type="email"] {
 
 }
 
+.signUpLogo{
+    height: 3rem;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+  }
+
+.beSafe{
+    margin-top: 3rem;
+}
+
 input[type="password"] {
     margin-top: 0.75vh;
     background: #FFFFFF;

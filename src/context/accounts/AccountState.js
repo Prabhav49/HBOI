@@ -11,12 +11,12 @@ const AccountState = (props)=>{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',
-                "auth-token":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoiNjQ1YjczOTA0MTgzZDc4ZDE2MjM4NTgyIn0sImlhdCI6MTY4Mzc1MjQ0NH0.iskFnkeEQZblF_f12Up_D-WqVUTWu1Ds5WCo4YPqaQM"
+                "auth-token":localStorage.getItem('token')
             },
         });
-        const json = await response.json();
-        console.log(json)
-        setDetail(json);
+        const Json = await response.json();
+        console.log(Json)
+        setDetail(Json);
     }
 
     const [detail,setDetail] = useState(details);

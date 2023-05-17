@@ -8,7 +8,7 @@ const PremiumCalculator = () => {
 
   const calculatePremium = () => {
     // Perform the premium calculation logic here
-    let basePremium = 100; // You can set a default base premium value
+    let basePremium = 1000; // You can set a default base premium value
     let genderFactor = 1;
     let ageFactor = 1;
 
