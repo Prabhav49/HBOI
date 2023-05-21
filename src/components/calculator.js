@@ -67,7 +67,7 @@ const PremiumCalculator = () => {
       </div>
       <button onClick={calculatePremium}>Calculate Premium</button>
       <div>
-        <h3>Calculated Premium: {premium}</h3>
+        <h3>Calculated Premium: &#8377;{premium}</h3>
       </div>
 
       <div className='advertise'>

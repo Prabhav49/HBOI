@@ -8,6 +8,7 @@ nav {
   .navbarLogo{
     margin-top: 0.3rem;
     margin-left: 2rem;
+    cursor: pointer;
   }
   nav ul {
     list-style: none;

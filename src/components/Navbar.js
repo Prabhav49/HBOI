@@ -1,9 +1,16 @@
 import React, { useEffect } from 'react'
 import { Link, useLocation } from "react-router-dom";
 import './css/Navbar.css';
+import { useNavigate } from 'react-router-dom';
 
 
 const Navbar = () => {
+    const navigate = useNavigate();
+
+    const handleClick = () => {
+        navigate('/');
+      };
+
     let location = useLocation();
     useEffect(() => {
         console.log(location.pathname);
@@ -13,7 +20,7 @@ const Navbar = () => {
         <nav>
 
             <div className='flexbetween'>
-            <img className='navbarLogo' src='http://localhost:3000/assets/navbarLogo.png' height="5%" width="10%" alt="Logo" />
+            <img className='navbarLogo' onClick={handleClick} src='http://localhost:3000/assets/navbarLogo.png' height="5%" width="10%" alt="Logo" />
             <ul>
                 <li><Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/">Home</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/signUp" ? "active" : ""}`} to="/signUp">Sign Up</Link></li>
