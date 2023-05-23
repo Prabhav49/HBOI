@@ -1,5 +1,5 @@
 
-# HBOI - Hmailton Bank of India
+# HBOI -
 
 HBOI is a digital banking application developed by the Hamilton Bank of India. The application provides users with convenient access to banking services through a secure online platform. The primary features of the application include login/signup functionality, a chatbot, and a premium calculator.
 
