@@ -30,11 +30,14 @@ nav {
     border-radius: 5px;
     font-weight: bold;
     font-size: 1.5rem;
+    
 
   }
   
   .nav-link:hover {
     background-color: #ff6e6e;
     color: #ffffff;
+    text-decoration: 5px underline solid rgb(255, 255, 255);
   }
+
   
