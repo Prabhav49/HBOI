@@ -1,13 +1,14 @@
 import { useState } from "react";
 import AccountContext from "./accountContext";
+import { BASE_URL } from "../../helper";
 
 const AccountState = (props)=>{
-    const host = "http://localhost:5000"
+    // const host = "http://localhost:5000"
     const details = []
 
     //Get all Detail
     const getDetail = async () =>{
-        const response = await fetch(`${host}/api/auth/getuser`,{
+        const response = await fetch(`${BASE_URL}/api/auth/getuser`,{
             method:'GET',
             headers:{
                 'Content-Type':'application/json',

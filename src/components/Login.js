@@ -2,6 +2,8 @@ import React, { useState } from 'react'
 import './css/Login.css';
 import Marquee from "react-fast-marquee";
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../helper';
+
 const Login = () => {
 
   const [credentials, setCredentials] = useState({ email: "", password: "" })
@@ -9,7 +11,7 @@ const Login = () => {
   const handleSubmit = async (e) => {
     console.log('SUbmitted');
     e.preventDefault();
-    const response = await fetch("http://localhost:5000/api/auth/login", {
+    const response = await fetch(`${BASE_URL}/api/auth/login`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',

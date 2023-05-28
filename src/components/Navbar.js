@@ -20,7 +20,7 @@ const Navbar = () => {
         <nav>
 
             <div className='flexbetween'>
-            <img className='navbarLogo' onClick={handleClick} src='http://localhost:3000/assets/navbarLogo.png' height="5%" width="10%" alt="Logo" />
+            <img className='navbarLogo' onClick={handleClick} src='./assets/navbarLogo.png' height="5%" width="10%" alt="Logo" />
             <ul>
                 <li><Link className={`nav-link ${location.pathname === "/" ? "active" : ""}`} to="/">Home</Link></li>
                 <li><Link className={`nav-link ${location.pathname === "/signUp" ? "active" : ""}`} to="/signUp">Sign Up</Link></li>

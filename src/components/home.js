@@ -1,6 +1,7 @@
 import React from 'react';
 import './css/home.css';
 import { useNavigate } from 'react-router-dom';
+import { BASE_URL } from '../helper';
 
 const Home = () => {
   const navigate = useNavigate();
@@ -11,7 +12,7 @@ const Home = () => {
 
   return (
     <div className='homeContainer'>
-      <img className='logoImg' src="http://localhost:3000/assets/HBPOI1.png" />
+      <img className='logoImg' src={"./assets/HBPOI1.png"} />
       <div className='container1'>
         <button type="submit" id='bt1' onClick={handleClick}>Continue to Login</button>
       </div>

@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import './css/calculator.css';
+import { BASE_URL } from '../helper';
 
 const PremiumCalculator = () => {
   const [age, setAge] = useState('');
@@ -71,7 +72,7 @@ const PremiumCalculator = () => {
       </div>
 
       <div className='advertise'>
-      <img src="http://localhost:3000/assets/Frame1.png" width="100%" />
+      <img src="./assets/Frame1.png" width="100%" />
       </div>
     </div>
   );

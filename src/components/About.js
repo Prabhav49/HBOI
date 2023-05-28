@@ -1,6 +1,7 @@
 import React, { useContext } from 'react'
 import accountContext from '../context/accounts/accountContext'
 import './css/Aboutus.css';
+import { BASE_URL } from '../helper';
 const About = () => {
   const a = useContext(accountContext)
   return (
@@ -33,7 +34,7 @@ const About = () => {
           <p>To learn more about our banking services or to get in touch with us, please visit our official website or reach out to our customer service representatives. We look forward to serving you and being your trusted financial partner.</p>
       </div>
       <div className='advertise'>
-        <img src="http://localhost:3000/assets/Frame1.png" width="100%" />
+        <img src="./assets/Frame1.png" width="100%"/>
       </div>
     </div>
   )

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Marquee from "react-fast-marquee";
 import { useNavigate } from 'react-router-dom';
 import './css/Login.css';
+import { BASE_URL } from '../helper';
 
 const SignUp = () => {
 
@@ -11,7 +12,7 @@ const SignUp = () => {
     
     e.preventDefault();
     const { firstName,lastName,email, password, phone,accountDescription,branch} = credentials;
-    const response = await fetch("http://localhost:5000/api/auth/createuser", {
+    const response = await fetch(`${BASE_URL}/api/auth/createuser`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
@@ -39,7 +40,7 @@ const SignUp = () => {
 
       <div className='container1'>
         <div className='column'>
-        <img className='signUpLogo' src='http://localhost:3000/assets/navbarLogo.png' alt="Logo" />
+        <img className='signUpLogo' src='./assets/navbarLogo.png' alt="Logo" />
           <h4>Sign Up to HBOI</h4>
         </div>
         <div className='column'>
@@ -120,7 +121,7 @@ const SignUp = () => {
       </div>
 
       <div className='container4'>
-      <img src="http://localhost:3000/assets/Frame1.png" width="100%" />
+      <img src="./assets/Frame1.png" width="100%" />
       </div>
 
       <div className='footer'>
