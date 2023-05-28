@@ -7,6 +7,10 @@ HBOI is a digital banking application developed by the Hamilton Bank of India. T
 ![Logo](./public/assets/navbarLogo.png)
 
 
+## API Documentation
+
+https://documenter.getpostman.com/view/27643465/2s93m7V1Zq
+
 ## Screenshots
 
 Home Page
