@@ -4,7 +4,8 @@
   "description": "Hboi - Hamilton Bank of India",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",
@@ -16,6 +17,10 @@
     "jsonwebtoken": "^9.0.0",
     "mongoose": "^7.0.4"
   },
+  "engines": {
+    "node": ">=14.20.1"
+  },
+
   "devDependencies": {
     "nodemon": "^2.0.22"
   }
