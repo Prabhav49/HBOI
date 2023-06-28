@@ -40,7 +40,7 @@ const Login = () => {
 
       <div className='container1'>
         <div className='column'>
-        <img className='signUpLogo' src='./assets/navbarLogo.png' alt="Logo" />
+        <img className='signUpLogo' src='http://localhost:3000/assets/navbarLogo.png' alt="Logo" />
           <h4>Login to HBOI</h4>
         </div>
         <div className='column'>
@@ -66,11 +66,11 @@ const Login = () => {
 
           <button type="submit" onSubmit={handleSubmit}>Submit</button>
         </form>
-        <img className="beSafe" src='./assets/frame2.png' alt='Be Safe' height="100%" width="50%" />
+        <img className="beSafe" src='http://localhost:3000/assets/frame2.png' height="100%" width="50%" />
       </div>
 
       <div className='container4'>
-      <img src="./assets/Frame1.png" width="100%" alt='Information' />
+      <img src="http://localhost:3000/assets/Frame1.png" width="100%" />
       </div>
 
       <div className='footer'>
